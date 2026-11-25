@@ -1,0 +1,21 @@
+{
+    "package_name": "Cue Mixes",
+    "id": "com.fedetrillo.cuemixes",
+    "title": "Cue Mixes",
+    "name": "Cue Mixes",
+    "version": "1.0.0",
+    "manufacturer": "Fede Trillo",
+    "contact": "fedetrillo@gmail.com",
+    "description": ["Four headphone mixes for recording, built on LUNA's cue sends: start each from your faders, move groups and channels, give every musician more of themselves, copy and paste between cues. Your main mix is never touched."],
+    "categories": ["Recording", "Mixing & Mastering", "Workflow"],
+    "icon": "icon.png",
+    "sdk_version": "3.1.2",
+    "min_luna_version": "3.1.2",
+    "engines": ["luna"],
+    "html": "index.html",
+    "target": "window",
+    "floating": true,
+    "show_with_session": true,
+    "width": 1000,
+    "height": 600
+}
