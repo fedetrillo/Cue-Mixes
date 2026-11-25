@@ -43,6 +43,9 @@ touched.
 2. Press **From the mix in all 4** to give every musician your mix as a start.
 3. Name each column, pick their channels under **Volume**, and move the group faders as they ask.
 
+The first time it opens, it asks for your language and then a short guide walks you through the
+window in it; the **Guide** button brings it back whenever you need it.
+
 Which output or headphones each cue reaches is set in LUNA and on your interface, as usual.
 
 ## Support
