@@ -7,7 +7,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const C = window.CueLogic;
-  const VERSION = '1.0.1';
+  const VERSION = '1.0.2';
   const KEY = 'com.fedetrillo.cuemixes.';
   const store = {
     get: (k) => { try { return JSON.parse(localStorage.getItem(KEY + k)); } catch { return null; } },
@@ -559,7 +559,7 @@
         rows: rows.map((r) => ({ name: r.name, kind: r.kind, sub: !!r.sub, to: rows.find((x) => x.id === r.dest)?.name ?? null, group: S.assign[r.id] ?? null, cues: [0, 1, 2, 3].map((i) => { const o = cueOut(r, i); return o ? { db: o.gain.real.value, m: o.mute.on, en: o.controls.byId('enabled') ? o.enabled.real.value : null, pre: o.controls.byId('pre_fader') ? o.preFader.real.value : null } : null; }) })),
         cues: S.cues.map((c) => ({ name: c.name, color: c.color, more: c.more, mine: c.mine.length, g: c.gDb, c: Object.keys(c.cDb).length })),
         log: log.slice(-40) }, null, 2);
-      try { await navigator.clipboard.writeText(text); say('report', {}, 'ok', 3000); } catch { console.log(text); }
+      try { if (await AddOnCopy(text)) say('report', {}, 'ok', 5000); } catch { console.log(text); }
     };
 
     app = { paint };
