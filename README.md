@@ -1,8 +1,8 @@
 # Cue Mixes for LUNA
 
-Four headphone mixes for recording, built on LUNA's cue sends: start each from your faders, move
-groups and channels, give every musician more of themselves, copy and paste between cues. Your
-main mix is never touched.
+Every musician gets the headphone mix they ask for, and your main mix is never touched. Cue
+Mixes builds LUNA's four cue mixes from your faders in one click; then give the singer more
+voice or the drummer more click, by group or by channel, and copy one cue to another.
 
 <p>
   <img src="docs/screenshot-dark.png" alt="Cue Mixes, dark theme" width="460">
